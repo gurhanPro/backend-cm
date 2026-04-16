@@ -1,6 +1,12 @@
 # Dog Breed Favourites API
 
-NestJS backend for managing favourite dog images per user.
+Deployed at https://backend-cm-production.up.railway.app
+
+Swagger docs at https://backend-cm-production.up.railway.app/api/docs
+
+GitHub: https://github.com/gurhanPro/backend-cm
+
+Hosted on Railway | Database on Neon PostgreSQL
 
 ## Setup
 
