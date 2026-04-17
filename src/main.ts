@@ -8,10 +8,9 @@ async function bootstrap() {
 
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
 
-  const allowedOrigins = process.env.CORS_ORIGINS
-    ? process.env.CORS_ORIGINS.split(',')
-    : ['http://localhost:5173'];
-  app.enableCors({ origin: allowedOrigins });
+  app.enableCors({
+    origin: ['http://localhost:5173', 'https://cloudsmiths-frontend.pages.dev'],
+  });
 
   const swaggerConfig = new DocumentBuilder()
     .setTitle('Dog Breed Favourites API')
